@@ -1,0 +1,389 @@
+/**********************
+    GERAL
+**********************/
+:root {
+    --primary-color: #1d9684;
+    --primary-color-opacity: rgba(29, 150, 132, .5);
+    --secondary-color: #fbb375;
+}
+
+/************
+    BANNER
+*************/
+.banner-area {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/home/rvcred/banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+    z-index: 1;
+}
+.banner-area::before {
+    z-index: -5;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.contact-header-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.contact-header-info a {
+    color: var(-primary-color);
+    font-size: 16px;
+}
+.banner-area .content {
+    width: 100%;
+    max-width: 1300px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 5;
+}
+.banner-area .content .left {
+    width: 50%;
+    padding: 0 15px;
+}
+.banner-area .content .left h2 {
+    color: #FFF;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.banner-area .content .left p {
+    font-size: 24px;
+    /* font-weight: bold; */
+}
+.banner-area .content .btn-area {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 35px;
+}
+.banner-area .btn-area button {
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    transition: .2s ease-in;
+    /* font-weight: bold; */
+    font-size: 20px;
+}
+.banner-area .btn-area button:hover {
+    cursor: pointer;
+}
+.banner-area::before {
+    background: rgba(0, 0, 0, .4);
+}
+.banner-area .content .left p {
+    font-size: 24px;
+    color: var(--secondary-color);
+}
+.banner-area .content .left p:nth-child(2n) {
+    color: var(--primary-color);
+}
+.banner-area .btn-area button {
+   background: var(--primary-color);
+   color: var(--secondary-color);
+}
+.banner-area .btn-area button:hover {
+    color: var(--primary-color);
+    background: var(--secondary-color);
+}
+@media(max-width: 500px) {
+    .banner-area {
+        background-position: -680px;
+    }
+    .banner-area .content .left {
+        width: 100%;
+        text-align: center;
+    }
+    .banner-area .content .left h2 {
+        font-size: 30px;
+    }
+    .banner-area .content .left .btn-area {
+        justify-content: center;
+    }
+}
+
+/******* About FGTS ********/
+.about-fgts {
+    padding: 25px 0;
+}
+.about-fgts .content {
+    margin-bottom: 20px;
+}
+.about-fgts .content .title-area {
+    text-align: center;
+}
+.about-fgts .content .title-area .logo-area {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+.about-fgts .content .title-area .logo-area img {
+    width: 100%;
+    height: 100%;
+}
+.about-fgts .content .title-area h3 {
+    font-weight: bold;
+    margin: 20px 0;
+    font-size: 30px;
+}
+.about-fgts .content .title-area p {
+    font-size: 25px;;
+}
+.about-fgts .description-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-fgts .description-area .title-area p {
+    font-size: 25px;
+    font-weight: bold;
+}
+.about-fgts .content .title-area h3 {
+    color: var(--primary-color);
+}
+.about-fgts .content .title-area p {
+    color: var(--secondary-color);
+}
+.about-fgts .description-area .title-area p {
+    color: var(--primary-color);
+}
+@media (max-width: 600px) {
+    .about-fgts .right .img-area {
+        max-width: 500px;
+        width: 100%;
+    }
+    .about-fgts .right .img-area img {
+        width: 100%;
+    }
+}
+@media (max-width: 1000px) {
+    .about-fgts .description-area {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+}
+/******* End About FGTS ********/
+
+/******* Benefits ********/
+.benefits-area {
+    margin: 40px 0;
+}
+.benefits-area .title-area {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.benefits-area .title-area h3 {
+    font-weight: bold;
+    font-size: 30px;
+}
+.benefits-area .card-area {
+    width: 100%;
+    height: 285px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .3);
+}
+.benefits-area .card-area .card-logo {
+    margin-bottom: 10px;
+}
+.benefits-area .card-area .card-logo i {
+    font-size: 70px;
+}
+.benefits-area .card-area .card-title h2 {
+    font-size: 30px;
+}
+.benefits-area .card-area .text-area {
+    text-align: center;
+}
+.benefits-area .card-area .text-area p {
+    font-size: 22px;
+}
+.benefits-area .title-area h3 {
+    color: var(--primary-color);
+}
+.benefits-area .card-area .card-logo i {
+    color: var(--primary-color);
+}
+.benefits-area .card-area .card-title h2 {
+    color: var(--primary-color);
+}
+/******* End Benefits ********/
+
+
+/* ===================================
+    Process
+====================================== */
+.process {
+    margin: 0 30px;
+}
+.process .title-area {
+    text-align: center;
+}
+.process .title-area h2 {
+    font-weight: bold;
+    font-size: 25px;
+}
+.process .title-area {
+    max-width: 650px;
+    margin: 0 auto;
+}
+.process .title-area p {
+    margin-top: 20px;
+    font-size: 20px;
+}
+.process .card-area {
+    width: 100%;
+    max-width: 265px;
+    height: 175px;
+    margin: 30px auto;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, .5);
+    border-width: 2px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px 20px 20px;
+    text-align: center;
+    transition: .5s ease-in-out;
+}
+.process .card-area:hover {
+    transform: scale(1.05);
+}
+.process .card-area:hover .direction i {
+    transform: scale(1);
+}
+.process .card-area .circle-area {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, .5);
+    border-width: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -30px;
+    left: calc(50% - 30px);
+    background: #FFF;
+}
+.process .card-area .circle-area p {
+    font-size: 30px;
+}
+.process .card-area .circle-area i {
+    color: #fec008;
+}
+.process .card-area p {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.process .card-area .direction {
+    position: absolute;
+    right: -25px;
+}
+.process .card-area .direction i {
+    font-size: 25px;
+}
+.process .title-area h2 {
+    color: var(--primary-color);
+}
+.process .title-area p {
+    color: var(--secondary-color);
+}
+.process .card-area .circle-area {
+    border-color: var(--primary-color-opacity);
+}
+.process .card-area p {
+    color: var(--primary-color);
+}
+.process .card-area .circle-area p {
+    color: var(--primary-color);
+}
+/* ===================================
+    end Process
+====================================== */
+
+/* ===================================
+    Simulation
+====================================== */
+.simulation-area {
+    margin: 25px 0;
+}
+.simulation-area .content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.simulation-area .content .text-area p {
+    font-size: 25px;
+}
+.simulation-area .content .text-area p span {
+    font-weight: bold;
+}
+.simulation-area .content .btn-area {
+    width: 100%;
+    max-width: 430px;
+    height: 60px;
+    margin-top: 30px;
+}
+.simulation-area .content .btn-area a {
+    transition: .5s ease;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 22px;
+}
+.simulation-area .content .btn-area a:hover {
+    text-decoration: none;
+}
+.simulation-area .img-area {
+    width: 100%;
+    max-width: 625px;
+}
+.simulation-area .img-area img {
+    width: 100%;
+}
+.simulation-area .content .text-area p span {
+    color: var(--primary-color);
+}
+.simulation-area .content .btn-area a {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+.simulation-area .content .btn-area a:hover {
+    color: var(--primary-color);
+    background: var(--secondary-color);
+}
+/* ===================================
+    End Simulation
+====================================== */
+
+

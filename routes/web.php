@@ -11,4 +11,5 @@
 |
 */
 
-Route::get("HomeController@index")->name("Home");
+Route::get("/", "HomeController@index")->name("Home");
+Route::get("/contato", "ContactController@index")->name("contato");
