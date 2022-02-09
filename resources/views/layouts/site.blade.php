@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/imask"></script>
     <!-- end links -->
 
     <title>@yield('title')</title>
@@ -33,25 +34,25 @@
                 </div>
                 <ul>
                     <li>
-                        <a class="@yield("home")" href="{{ url("/") }}">Início</a>
+                        <a id="linkHome" class="" href="{{ url("/") }}">Início</a>
                     </li>
                     <li>
-                        <a class="@yield("about")" href="{{ url("/sobre") }}">Sobre</a>
+                        <a id="linkAbout" class="" href="{{ url("/sobre") }}">Sobre</a>
                     </li>
                     <li>
-                        <a class="@yield("product")" href="{{ url("/produtos") }}">Produtos</a>
+                        <a id="linkProduct" class="" href="{{ url("/produtos") }}">Produtos</a>
                     </li>
                     <li>
-                        <a class="@yield("tips")" href="{{ url("/dicas") }}">Dicas</a>
+                        <a id="linkTips" class="" href="{{ url("/dicas") }}">Dicas</a>
                     </li>
                     <li>
-                        <a class="@yield("fgts")" href="{{ url("/fgts") }}">FGTS</a>
+                        <a class="@yield("fgts")" href="{{ url("/simulacao") }}">FGTS</a>
                     </li>
                     <li>
-                        <a class="@yield("question")" href="{{ url("/duvidas") }}">Dúvidas</a>
+                        <a class="@yield("speak")" href="{{ url("/sua-voz") }}">Sua voz</a>
                     </li>
                     <li>
-                        <a class="@yield("contact")" href="{{ url("/contato") }}">Contato</a>
+                        <a id="linkContact" class="" href="{{ url("/contato") }}">Contato</a>
                     </li>
                 </ul>
             </nav>
@@ -84,7 +85,7 @@
                             <a class="scroll" href="#fgts">FGTS</a>
                         </li>
                         <li>
-                            <a class="scroll" href="#duvidas">Dúvidas</a>
+                            <a class="scroll" href="{{ url("/sua-voz") }}">Sua voz</a>
                         </li>
                         <li>
                             <a class="scroll" href="{{ url('/contato') }}">Contato</a>
@@ -173,14 +174,14 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                <div class="box-area rede-area">
+                    <div class="box-area rede-area">
                         <div class="title-area">
                             <p>Garantia extra?</p>
                         </div>
                         <div class="rede-text">
                             <p>Precisando de uma graninha extra? Faça agora uma solicitação. É rápido, prático e seguro!</p>
                         </div>
-                </div>
+                    </div>
                 </div>
             </div>
             <div class="copy-area">
@@ -205,7 +206,7 @@
            } else {
                $("#mobile-menu-content").addClass("hide");
                $("#mobile-menu-content").removeClass("show");
-           }
+            }
 
        }
 

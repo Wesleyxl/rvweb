@@ -14,4 +14,9 @@ class ContactController extends Controller
             "info" => $info
         ));
     }
+
+    public function store(Request $request)
+    {
+        dd($request->all());
+    }
 }

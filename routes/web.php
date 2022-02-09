@@ -13,4 +13,4 @@
 
 Route::get("/", "HomeController@index")->name("Home");
 Route::get("/simulacao", "SimulationController@index")->name("fgts");
-Route::get("/contato", "ContactController@index")->name("contato");
+Route::post("/contact", "ContactController@store")->name("contato");
