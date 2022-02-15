@@ -70,7 +70,7 @@
     justify-content: flex-start;
     margin-top: 35px;
 }
-.banner-area .btn-area button {
+.banner-area .btn-area a {
     width: 300px;
     height: 50px;
     border: none;
@@ -78,9 +78,13 @@
     transition: .2s ease-in;
     /* font-weight: bold; */
     font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.banner-area .btn-area button:hover {
+.banner-area .btn-area a:hover {
     cursor: pointer;
+    text-decoration: none;
 }
 .banner-area::before {
     background: rgba(0, 0, 0, .4);
@@ -92,11 +96,11 @@
 .banner-area .content .left p:nth-child(2n) {
     color: var(--primary-color);
 }
-.banner-area .btn-area button {
+.banner-area .btn-area a {
    background: var(--primary-color);
    color: var(--secondary-color);
 }
-.banner-area .btn-area button:hover {
+.banner-area .btn-area a:hover {
     color: var(--primary-color);
     background: var(--secondary-color);
 }

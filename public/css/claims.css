@@ -41,25 +41,3 @@
     color: #FFF;
     font-weight: bold;
 }
-
-
-/**********************
-    SIMULATION
-**********************/
-.simulation {
-    margin: 35px 0;
-}
-.simulation .title h3 {
-    font-size: 25px;
-    color: var(--primary-color);
-    font-weight: bold;
-}
-
-.simulation .table-area {
-    position: relative;
-    top: -50px;
-}
-.simulation .list-area {
-    position: relative;
-    bottom: -70px;
-}

@@ -15,7 +15,7 @@
                     <p>O Empréstimo que já nasce pago*</p>
                     <p>O dinheiro que já é seu por direito, na sua conta bancária mais rápido e sem burocracia!</p>
                     <div class="btn-area">
-                        <button>Simule grátis</button>
+                        <a href="{{ url("/sua-voz") }}">Simule grátis</a>
                     </div>
                 </div>
                 <div class="right"></div>
@@ -227,7 +227,7 @@
                                 <p>Faça sua simulação agora e <span>solicite seu empréstimo</span> com garantia do saque aniversário do FGTS.</p>
                             </div>
                             <div class="btn-area">
-                                <a href="#">Simule grátis</a>
+                                <a href="{{ url("/sua-voz") }}">Simule grátis</a>
                             </div>
                         </div>
                     </div>

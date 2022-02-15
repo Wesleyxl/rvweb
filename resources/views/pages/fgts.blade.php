@@ -36,7 +36,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
             <div class="table-area">
                 <div class="row">
                     <div class="col-md-6">
