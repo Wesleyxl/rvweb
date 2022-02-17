@@ -37,13 +37,13 @@
                         <a id="linkHome" class="" href="{{ url("/") }}">Início</a>
                     </li>
                     <li>
-                        <a id="linkAbout" class="" href="{{ url("/sobre") }}">Sobre</a>
+                        <a id="linkAbout" class="" href="{{ url("/#sobre") }}">Sobre</a>
                     </li>
                     <li>
-                        <a id="linkProduct" class="" href="{{ url("/produtos") }}">Produtos</a>
+                        <a id="linkProduct" class="" href="{{ url("/#produtos") }}">Produtos</a>
                     </li>
                     <li>
-                        <a id="linkTips" class="" href="{{ url("/dicas") }}">Dicas</a>
+                        <a id="linkTips" class="" href="{{ url("/#dicas") }}">Dicas</a>
                     </li>
                     <li>
                         <a class="@yield("fgts")" href="{{ url("/simulacao") }}">FGTS</a>
@@ -52,7 +52,7 @@
                         <a class="@yield("speak")" href="{{ url("/sua-voz") }}">Sua voz</a>
                     </li>
                     <li>
-                        <a id="linkContact" class="" href="{{ url("/contato") }}">Contato</a>
+                        <a id="linkContact" class="" href="{{ url("/#contact") }}">Contato</a>
                     </li>
                 </ul>
             </nav>

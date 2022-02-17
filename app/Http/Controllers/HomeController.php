@@ -31,7 +31,7 @@ class HomeController extends Controller
             return redirect()->back()->withInput()->withErrors($validator->errors());
         }
 
-
+        // tratar
 
     }
 }
