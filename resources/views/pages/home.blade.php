@@ -258,22 +258,22 @@
                             @csrf
                             <div class="form">
                                 <div class="row">
-                                    <div class="col-6">
+                                    <div class="col-md-6">
                                         <div class="form-group">
                                             <input type="text" name="name" id="name" class="form-control" placeholder="Digite seu nome completo">
                                         </div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-md-6">
                                         <div class="form-group">
                                             <input type="text" name="cpf" id="cpf" class="form-control" placeholder="Digite seu cpf" onkeypress="$(this).mask('000.000.000-00')">
                                         </div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-md-6">
                                         <div class="form-group">
                                             <input type="text" name="phone" id="phone" class="form-control" placeholder="Digite seu celular" onkeypress="$(this).mask('(00)00000-0000')">
                                         </div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-md-6">
                                         <div class="form-group">
                                             <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu email">
                                         </div>

@@ -4,6 +4,7 @@
 :root {
     --primary-color: #1d9684;
     --primary-color-opacity: rgba(29, 150, 132, .5);
+    --primary-color-opacity2: rgba(35, 185, 85, 0.5);
     --secondary-color: #fbb375;
 }
 
@@ -44,6 +45,7 @@
     width: 100%;
     max-width: 1300px;
     height: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -239,7 +241,7 @@
     Process
 ====================================== */
 .process {
-    margin: 0 30px;
+    padding: 0 30px;
 }
 .process .title-area {
     text-align: center;

@@ -42,7 +42,12 @@
     font-weight: bold;
 }
 
-
+/**********************
+    CLAIMS
+**********************/
+.claims {
+    margin: 35px 0;
+}
 .claims .content .title-area {
     text-align: center;
 }
@@ -81,4 +86,69 @@
 }
 .claims .description-area .title-area p {
     color: var(--primary-color);
+}
+
+.claims .content .testimonial-area {
+    display: flex;
+    justify-content: space-between;
+}
+.claims .content .testimonial-area .img-area {
+    width: 100%;
+    max-width: 350px;
+}
+.claims .content .testimonial-area .img-area img {
+    width: 100%;
+    height: 100%;
+}
+
+.claims {
+    margin: 30px 0;
+    padding: 15px 0;
+}
+.claims .title-area {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.claims .form-area .form .form-group {
+    margin-bottom: .5rem;
+}
+.claims .form-area .form .form-group input:focus,
+.claims .form-area .form .form-group select:focus,
+.claims .form-area .form .form-group textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 1px var(--primary-color);
+}
+.claims .form-area .map-area {
+    width: 100%;
+    height: 100%;
+}
+.claims .btn-area {
+    width: 100px;
+    height: 35px;
+    margin: 15px auto;
+}
+
+.claims .btn-area {
+    width: 100px;
+    height: 35px;
+    margin: 15px auto;
+}
+
+.claims .btn-area button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    transition: .5 ease;
+}
+
+.claims .btn-area button:hover {
+    color: var(--primary-color);
+    font-weight: bold;
+    background: var(--secondary-color);
 }
