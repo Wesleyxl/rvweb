@@ -89,16 +89,46 @@
 }
 
 .claims .content .testimonial-area {
+    width: 100%;
+    margin: 30px 0;
+}
+.claims .content .testimonial-area .item {
+    background: #FFF;
+    width: 100%;
+    max-width: 450px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 15px;
+}
+.claims .content .testimonial-area .item .title-content {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-.claims .content .testimonial-area .img-area {
-    width: 100%;
-    max-width: 350px;
+.claims .content .testimonial-area .item .title-content .name-area {
+    display: flex;
+    align-items: center;
 }
-.claims .content .testimonial-area .img-area img {
-    width: 100%;
-    height: 100%;
+.claims .content .testimonial-area .item .title-content .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+.claims .content .testimonial-area .item .text {
+    margin-top: 15px;
+}
+.claims .content .testimonial-area .item .title-content .reason {
+    font-weight: bold;
+    font-size: 25px;
+    color: var(--primary-color);
 }
 
 .claims {

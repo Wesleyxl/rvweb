@@ -406,6 +406,14 @@
     color: var(--primary-color);
     font-weight: bold;
 }
+.contact .text-area p{
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    color: var(--secondary-color);
+    margin-bottom: 35px;
+}
 
 .contact .form-area .form .form-group {
     margin-bottom: .5rem;

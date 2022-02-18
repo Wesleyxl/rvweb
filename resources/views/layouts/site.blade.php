@@ -49,7 +49,7 @@
                         <a class="@yield("fgts")" href="{{ url("/simulacao") }}">FGTS</a>
                     </li>
                     <li>
-                        <a class="@yield("speak")" href="{{ url("/sua-voz") }}">Sua voz</a>
+                        <a class="@yield("speak")" href="{{ url("/#sua-voz") }}">Sua voz</a>
                     </li>
                     <li>
                         <a id="linkContact" class="" href="{{ url("/#contact") }}">Contato</a>

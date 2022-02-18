@@ -27,15 +27,16 @@
                     <p>A {{ $info->empresaName }} coloca à disposição de seus parceiros e clientes o Canal Sua Voz, onde interessados podem enviar elogios, denúncias, sugestões e reclamações de forma anônima ou não.</p>
                 </div>
                 <div class="testimonial-area">
-                    <div class="img-area">
-                        <img src="{{ URL::to('/public/img/home/rvcred/banner.png')}}" alt="">
-                    </div>
-                    <div class="text-area">
-                        <div class="title">
-                            <h4>Elogios</h4>
+                    <div class="item">
+                        <div class="title-content">
+                            <div class="name-area">
+                                <div class="logo">M</div>
+                                <div class="name">Maria Lucia</div>
+                            </div>
+                            <div class="reason">Elogio</div>
                         </div>
                         <div class="text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto earum optio facere vel, veniam dolor, assumenda excepturi tenetur quisquam enim ducimus, aut ad. Vel corporis assumenda suscipit nostrum commodi obcaecati?</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, aut ab reiciendis deleniti sint veritatis, amet quis ex provident maiores illo iure nesciunt laboriosam fugiat non sequi iusto accusamus facere.</p>
                         </div>
                     </div>
                 </div>

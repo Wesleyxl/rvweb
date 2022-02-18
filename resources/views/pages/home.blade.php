@@ -249,7 +249,7 @@
                 <h3>Entre em contato conosco</h3>
             </div>
             <div class="text-area">
-                <p></p>
+                <p>A {{ $info->empresaName }} coloca à disposição de seus parceiros e clientes o Canal contato, onde interessados podem enviar elogios, denúncias, sugestões e reclamações de forma anônima ou não.</p>
             </div>
             <div class="form-area">
                 <div class="row">
