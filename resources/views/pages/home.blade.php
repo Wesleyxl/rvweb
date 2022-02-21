@@ -219,21 +219,41 @@
     <!-- simulation area -->
     <section id="sectionSimulation">
         <div class="simulation-area">
+            <div class="title-area">
+                <h3>Faça sua simulação agora e solicite seu empréstimo com garantia do saque aniversário do FGTS.</h3>
+            </div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="content">
-                            <div class="text-area">
-                                <p>Faça sua simulação agora e <span>solicite seu empréstimo</span> com garantia do saque aniversário do FGTS.</p>
-                            </div>
-                            <div class="btn-area">
-                                <a href="{{ url("/simulacao") }}">Simule grátis</a>
-                            </div>
+                        <div class="img-area">
+                            <img src="{{ URL::to("public/img/home/rvcred/simulation-area.png") }}" alt="{{ $info->empresa }}">
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="img-area">
-                            <img src="{{ URL::to("public/img/home/rvcred/simulation-area.png") }}" alt="{{ $info->empresa }}">
+                        <div class="content">
+                            <div class="box">
+                                <div class="text">
+                                    <p>Qual seu saldo FGTS?</p>
+                                </div>
+                                <div class="simulation">
+                                    <p>Simule o valor liberado para saque</p>
+                                    <div>
+                                        <div class="input">
+                                            <input type="text" name="value" id="value" placeholder="R$ 0.000,00" onkeypress="$(this).maks('000.000,00')">
+                                            <button class="bg-success"><i class="fa fa-check" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="result" id="result">
+                                    <p>...</p>
+                                </div>
+                                <div class="bottom">
+                                    <p>Não sabe seu saldo disponível? <a href="" target="_blank" alt="app fgts">Acesse o APP do FGTS</a></p>
+                                    <div class="btn-area bg-success">
+                                        <a href=""><i class="fa-brands fa-whatsapp"></i>  Contratar no whatsapp</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
