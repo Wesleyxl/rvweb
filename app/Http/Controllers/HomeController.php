@@ -34,4 +34,9 @@ class HomeController extends Controller
         // tratar
 
     }
+
+    public function fgtsSimulation(Request $request)
+    {
+        return view('pages.fgts');
+    }
 }

@@ -239,8 +239,8 @@
                                     <p>Simule o valor liberado para saque</p>
                                     <div>
                                         <div class="input">
-                                            <input type="text" name="value" id="value" placeholder="R$ 0.000,00" onkeypress="$(this).maks('000.000,00')">
-                                            <button class="bg-success"><i class="fa fa-check" aria-hidden="true"></i></button>
+                                            <input type="text" name="fgts" id="fgts-simulation" placeholder="R$ 0.000,00" onkeypress="$(this).mask('R$ 000.000,00')">
+                                            <button id="fgts-simulation-button" class="bg-success"><i class="fa fa-check" aria-hidden="true"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -333,4 +333,28 @@
     </section>
     <!-- end contact area -->
 
+    <script>
+        var timeout = null;
+        $('body').on('click', '#fgts-simulation-button', function(e){
+
+            var fgts = $('#fgts-simulation').val();
+
+            clearTimeout(timeout);
+            timeout = setTimeout(function() {
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+                $.ajax({
+                    type: "POST",
+                    url: "{{ url('/simulation-fgts') }}",
+                    data: {data: fgts},
+                    success: function(retorno){
+                        $('#result').html(retorno);
+                    }
+                });
+            }, 800)
+        });;
+    </script>
 @endsection

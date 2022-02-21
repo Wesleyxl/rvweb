@@ -338,6 +338,11 @@
 .simulation-area {
     margin: 35px 0;
 }
+.simulation-area .title-area {
+    width: 100%;
+    max-width: 650px;
+    margin: 35px auto;
+}
 .simulation-area .title-area h3 {
     color: var(--primary-color);
     font-weight: bold;
