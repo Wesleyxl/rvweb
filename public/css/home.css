@@ -443,9 +443,99 @@
 .simulation-area .img-area img {
     width: 100%;
 }
-/* ===================================
-    End Simulation
-====================================== */
+
+
+/* ==================
+    TESTIMONIAL
+=================== */
+.testimonial {
+    margin: 30px 0;
+    min-height: 500px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    background: #f8f9fa;
+}
+.testimonial .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial .content .box {
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 0 30px ;
+}
+.testimonial .content .box .icon {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.testimonial .content .box .icon i {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 30px;
+}
+.testimonial .content .box .text {
+    text-align: center;
+    color: rgba(0, 0, 0, .5);
+}
+.testimonial .content .box .name {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+.testimonial .content .box .name p {
+    font-weight: bold;
+    color: var(--primary-color);
+    font-size: 22px;
+}
+.testimonial .counters-area {
+    position: relative;
+    background-image: url(../img/sua-voz/bg-img.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 60%;
+}
+.testimonial .counters-area::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color);
+    opacity: .6;
+    z-index: 1;
+}
+.testimonial .counters-area .data {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-evenly;
+}
+.testimonial .counters-area .data .line {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 275px;
+}
+.testimonial .counters-area .data .line .item {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+.testimonial .counters-area .data .line .item p {
+    font-size: 18px;
+    margin: 0 10px;
+}
 
 /**********************
     Contact
