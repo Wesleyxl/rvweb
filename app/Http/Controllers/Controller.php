@@ -48,5 +48,4 @@ class Controller extends BaseController
         return (object) $data;
     }
 
-
 }

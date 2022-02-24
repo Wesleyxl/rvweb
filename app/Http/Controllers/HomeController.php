@@ -37,6 +37,10 @@ class HomeController extends Controller
 
     public function fgtsSimulation(Request $request)
     {
-        return view('pages.fgts');
+        $data = $request->data;
+
+        return view('pages.fgts', array(
+            "data" => $data
+        ));
     }
 }
