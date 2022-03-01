@@ -10,10 +10,15 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 :root {
     --primary-color: #1d9684;
     --secondary-color: #fbb375;
+}
+.container {
+    max-width: 1360px;
+
 }
 
 /************

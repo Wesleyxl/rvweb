@@ -264,69 +264,73 @@
 
     <!-- testimonial area -->
     <section class="testimonial">
-        <div class="content">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="box">
-                            <div class="icon"><i class="fa-solid fa-quote-right"></i></div>
-                            <div class="text">
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos suscipit nisi iure saepe in voluptas impedit assumenda excepturi quisquam! Numquam sapiente porro tenetur sed quibusdam necessitatibus obcaecati nesciunt excepturi vel!</p>
+        <div class="container">
+            <div class="main">
+                <div class="content">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="box">
+                                    <div class="icon"><i class="fa-solid fa-quote-right"></i></div>
+                                    <div class="text">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos suscipit nisi iure saepe in voluptas impedit assumenda excepturi quisquam! Numquam sapiente porro tenetur sed quibusdam necessitatibus obcaecati nesciunt excepturi vel!</p>
+                                    </div>
+                                    <div class="name">
+                                        <p>Maria Lucia</p>
+                                        <p>Recife - PE</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="name">
-                                <p>Maria Lucia</p>
-                                <p>Recife - PE</p>
+                            <div class="swiper-slide">
+                                <div class="box">
+                                    <div class="icon"><i class="fa-solid fa-quote-right"></i></div>
+                                    <div class="text">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos suscipit nisi iure saepe in voluptas impedit assumenda excepturi quisquam! Numquam sapiente porro tenetur sed quibusdam necessitatibus obcaecati nesciunt excepturi vel!</p>
+                                    </div>
+                                    <div class="name">
+                                        <p>Maria Lucia</p>
+                                        <p>Recife - PE</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="box">
+                                    <div class="icon"><i class="fa-solid fa-quote-right"></i></div>
+                                    <div class="text">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos suscipit nisi iure saepe in voluptas impedit assumenda excepturi quisquam! Numquam sapiente porro tenetur sed quibusdam necessitatibus obcaecati nesciunt excepturi vel!</p>
+                                    </div>
+                                    <div class="name">
+                                        <p>Maria Lucia</p>
+                                        <p>Recife - PE</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="box">
-                            <div class="icon"><i class="fa-solid fa-quote-right"></i></div>
-                            <div class="text">
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos suscipit nisi iure saepe in voluptas impedit assumenda excepturi quisquam! Numquam sapiente porro tenetur sed quibusdam necessitatibus obcaecati nesciunt excepturi vel!</p>
-                            </div>
-                            <div class="name">
-                                <p>Maria Lucia</p>
-                                <p>Recife - PE</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="box">
-                            <div class="icon"><i class="fa-solid fa-quote-right"></i></div>
-                            <div class="text">
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos suscipit nisi iure saepe in voluptas impedit assumenda excepturi quisquam! Numquam sapiente porro tenetur sed quibusdam necessitatibus obcaecati nesciunt excepturi vel!</p>
-                            </div>
-                            <div class="name">
-                                <p>Maria Lucia</p>
-                                <p>Recife - PE</p>
-                            </div>
-                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-        <div class="counters-area">
-            <div class="data">
-                <div class="line">
-                    <div class="item">
-                        <div class="counter" data-target="12">0</div>
-                        <p>Milhões vendido em 2019</p>
-                    </div>
-                    <div class="item">
-                        <div class="counter" data-target="25">0</div>
-                        <p>Milhões refinanciados em uma menor taxa</p>
-                    </div>
-                </div>
-                <div class="line">
-                    <div class="item">
-                        <div class="counter" data-target="6000">4000</div>
-                        <p>Clientes</p>
-                    </div>
-                    <div class="item">
-                        <div class="counter" data-target="315">0</div>
-                        <p>Colaboradores</p>
+                <div class="counters-area">
+                    <div class="data">
+                        <div class="line">
+                            <div class="item">
+                                <div class="counter" data-target="12">0</div>
+                                <p>Milhões vendido em 2019</p>
+                            </div>
+                            <div class="item">
+                                <div class="counter" data-target="25">0</div>
+                                <p>Milhões refinanciados em uma menor taxa</p>
+                            </div>
+                        </div>
+                        <div class="line">
+                            <div class="item">
+                                <div class="counter" data-target="6000">4000</div>
+                                <p>Clientes</p>
+                            </div>
+                            <div class="item">
+                                <div class="counter" data-target="315">0</div>
+                                <p>Colaboradores</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
