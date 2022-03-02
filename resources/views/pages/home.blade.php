@@ -239,7 +239,7 @@
                                     <p>Simule o valor liberado para saque</p>
                                     <div>
                                         <div class="input">
-                                            <input type="text" name="fgts" id="fgts-simulation" placeholder="R$ 0.000,00" onkeypress="$(this).mask('R$ 000.000,00')">
+                                            <input type="text" name="fgts" id="fgts-simulation" data-prefix="R$ " data-thousands="." data-decimal="," placeholder="R$ 0.000,00">
                                             <button id="fgts-simulation-button" class="bg-success"><i class="fa fa-check" aria-hidden="true"></i></button>
                                         </div>
                                     </div>

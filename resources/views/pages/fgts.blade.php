@@ -1,7 +1,7 @@
 <div class="result-content">
     <div class="result-result">
         <h3>Valor simuado:</h3>
-        <p>R$ 4.200,00</p>
+        <p>R$ {{ $data }}</p>
     </div>
     <p>Lembre-se, este valor é apenas uma simulação e pode variar de acordo com o valor do saldo de fundo de garantia liberado pela caixa para esta operação.</p>
     <p>Para saber o valor exato e receber uma proposta formal, clique em contratar agora.</p>

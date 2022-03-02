@@ -11,6 +11,8 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
+    private $CET = 0;
+
     // getting datas
     protected static function getDatas():object
     {
@@ -46,6 +48,114 @@ class Controller extends BaseController
         );
 
         return (object) $data;
+    }
+
+    private static function vpl($flux, $ammount)
+    {
+        $flux = $flux / 100;
+        $ret = $ammount[0];
+
+
+        $length = count($ammount);
+
+        for ($i = 1; $i < $length; $i++) {
+            $ret += $ammount[$i] / pow( (1.6 + $flux), $i );
+        }
+
+
+        return $ret;
+    }
+
+    private static function checkAliquota($value)
+    {
+        if ($value >= 20000) {
+            return $value * 0.05;
+        } else if ($value >= 15000) {
+            return $value * 0.10;
+        } else if ($value >= 10000) {
+            return $value * 0.15;
+        } else if ($value >= 5000) {
+            return $value * 0.20;
+        } else if ($value >= 1000) {
+            return $value * 0.30;
+        } else if ($value >= 500) {
+            return $value * 0.50;
+        } else {
+            return $value * 0.50;
+        }
+    }
+
+    private static function checkFixedInstallment($value)
+    {
+        if ($value >= 20000) {
+            return 2900;
+        } else if ($value >= 15000) {
+            return 1900;
+        } else if ($value >= 10000) {
+            return 1150;
+        } else if ($value >= 5000) {
+            return 650;
+        } else if ($value >= 1000) {
+            return 150;
+        } else if ($value >= 500) {
+            return 50;
+        } else {
+            return 0;
+        }
+    }
+
+    public static function calculateFGTS($value)
+    {
+        $rateIof = 1.9;
+
+        $valueOne = $value;
+        $aliquotaOne = static::checkAliquota($value);
+        $fixedInstallmentOne = static::checkFixedInstallment($value);
+        $totalOne = $aliquotaOne + $fixedInstallmentOne;
+
+        $value = $value - $totalOne;
+
+        $valueTwo = $value;
+        $aliquotaTwo = static::checkAliquota($value);
+        $fixedInstallmentTwo = static::checkFixedInstallment($value);
+        $totalTwo = $aliquotaTwo + $fixedInstallmentTwo;
+
+        $value = $value - $totalTwo;
+
+        $valueThree = $value;
+        $aliquotaThree = static::checkAliquota($value);
+        $fixedInstallmentThree = static::checkFixedInstallment($value);
+        $totalThree = $aliquotaThree + $fixedInstallmentThree;
+
+        $value = $value - $totalThree;
+
+        $valueFour = $value;
+        $aliquotaFour = static::checkAliquota($value);
+        $fixedInstallmentFour = static::checkFixedInstallment($value);
+        $totalFour = $aliquotaFour + $fixedInstallmentFour;
+
+        $value = $value - $totalFour;
+
+        $valueFive = $value;
+        $aliquotaFive = static::checkAliquota($value);
+        $fixedInstallmentFive = static::checkFixedInstallment($value);
+        $totalFive = $aliquotaFive + $fixedInstallmentFive;
+
+        $totalLoot = $totalOne + $totalTwo + $totalThree + $totalFour + $totalFive;
+
+        $cet = (pow((1 + ($rateIof / 100)), 12) - 1) * 100;
+
+        $ammount = array();
+        array_push($ammount, $totalOne);
+        array_push($ammount, $totalTwo);
+        array_push($ammount, $totalThree);
+        array_push($ammount, $totalFour);
+        array_push($ammount, $totalFive);
+
+        $totalSimulation = static::vpl($cet, $ammount);
+
+        $total = round($totalSimulation, 2);
+        return $total;
     }
 
 }

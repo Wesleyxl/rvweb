@@ -53,9 +53,15 @@ class HomeController extends Controller
     public function fgtsSimulation(Request $request)
     {
         $data = $request->data;
+        $data = substr($data, 0, -2);
+        $vowels = array(",", ".", "$", "R", " ");
+        $data = str_replace($vowels, "", $data);
+
+
+        $vauleTotal = static::calculateFGTS($data);
 
         return view('pages.fgts', array(
-            "data" => $data
+            "data" => $vauleTotal
         ));
     }
 }
