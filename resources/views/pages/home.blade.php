@@ -388,7 +388,7 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <textarea name="text" id="text" rows="5" placeholder="Mensagem" class="form-control"></textarea>
+                                            <textarea name="message" id="message" rows="5" placeholder="Mensagem" class="form-control"></textarea>
                                         </div>
                                     </div>
                                 </div>

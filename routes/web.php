@@ -12,7 +12,7 @@
 */
 
 Route::get("/", "HomeController@index")->name("Home");
-Route::get("/contact", "HomeController@store")->name("contact");
+Route::post("/contact", "HomeController@store")->name("contact");
 Route::post("/simulation-fgts", "HomeController@fgtsSimulation")->name("fgts-simulation");
 
 Route::get("/sua-voz", "ClaimsController@index")->name("claims");
